@@ -1,5 +1,5 @@
 ---
-const { color, title, subtitle } = Astro.props;
+const { color, title, subtitle, subtitleTwo, underline } = Astro.props;
 const textColor = `text-${color}`;
 ---
 
@@ -8,12 +8,15 @@ const textColor = `text-${color}`;
     data-header-color={color}
 >
     <div class="z-30 relative h-full flex flex-col">
-        <header class="">
-            <h2 class={`${textColor} pt-20 text-[40px] font-medium`}>
+        <header>
+            <h2 class={`${textColor} pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out`}>
                 {title}
             </h2>
-            <p class={`${textColor} text-sm`}>
+            <p class={`${textColor} ${underline} text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out`}>
                 {subtitle}
+            </p>
+            <p class={`${textColor} text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out`}>
+                {subtitleTwo}
             </p>
         </header>
 

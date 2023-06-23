@@ -1,6 +1,5 @@
 ---
 import Logo from "./Logo.astro";
-
 ---
 
 <header
@@ -15,13 +14,13 @@ import Logo from "./Logo.astro";
         <ul
             class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:text-current [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
         >
-            <li><a href="#">Model S</a></li>
-            <li><a href="#">Model 3</a></li>
-            <li><a href="#">Model X</a></li>
-            <li><a href="#">Model Y</a></li>
-            <li><a href="#">Solar Roof</a></li>
-            <li><a href="#">Solar Panels</a></li>
-            <li><a href="#">Powerwall</a></li>
+            <li><a class="modelS cursor-pointer">Model S</a></li>
+            <li><a class="model3 cursor-pointer">Model 3</a></li>
+            <li><a class="modelX cursor-pointer">Model X</a></li>
+            <li><a class="modelY cursor-pointer">Model Y</a></li>
+            <li><a class="solarRoof cursor-pointer">Solar Roof</a></li>
+            <li><a class="solarPanels cursor-pointer">Solar Panels</a></li>
+            <li><a class="powerwall cursor-pointer">Powerwall</a></li>
         </ul>
     </nav>
 
@@ -35,8 +34,9 @@ import Logo from "./Logo.astro";
         </ul>
     </nav>
 
-    <div id="menu-backdrop" 
-    class={`
+    <div
+        id="menu-backdrop"
+        class={`
         absolute bg-black/5 backdrop-blur-lg rounded
         translate-x-[var(--left)] translate-y-[var(--top)]
         left-0 top-0
@@ -44,18 +44,21 @@ import Logo from "./Logo.astro";
         transition-all duration-500
         ease-in-out opacity-0 -z-10
     `}
-    ></div>
+    >
+    </div>
 </header>
 
 <script>
-    const lisItem = document.querySelectorAll('#landing-header li');
-    const menuBackDrop = document.querySelector('#menu-backdrop') as HTMLElement;
+    const lisItem = document.querySelectorAll("#landing-header li");
+    const menuBackDrop = document.querySelector(
+        "#menu-backdrop"
+    ) as HTMLElement;
 
     lisItem.forEach((item) => {
         item.addEventListener("mouseenter", () => {
             const { left, top, width, height } = item.getBoundingClientRect();
-            const {clientHeight, clientWidth } = item;
-            
+            const { clientHeight, clientWidth } = item;
+
             menuBackDrop.style.setProperty("--left", `${left}px`);
             menuBackDrop.style.setProperty("--top", `${top}px`);
             menuBackDrop.style.setProperty("--width", `${width}px`);
@@ -63,35 +66,84 @@ import Logo from "./Logo.astro";
 
             menuBackDrop.style.opacity = "1";
             menuBackDrop.style.visibility = "visible";
-        })
+        });
 
         item.addEventListener("mouseleave", () => {
             menuBackDrop.style.opacity = "0";
             menuBackDrop.style.visibility = "hidden";
         });
     });
+
+    const principalSection = document.querySelector(".principalSection");
+    const modelS = document.querySelector(".modelS");
+    const model3 = document.querySelector(".model3");
+    const modelX = document.querySelector(".modelX");
+    const modelY = document.querySelector(".modelY");
+    const solarRoof = document.querySelector(".solarRoof");
+    const solarPanels = document.querySelector(".solarPanels");
+    const powerWall = document.querySelector(".powerwall");
+
+    principalSection.addEventListener("click", function(){
+        let principalSectionId = document.getElementById("principalSection");
+        principalSectionId.scrollIntoView({behavior: 'smooth', block: "start"});
+    });
+
+    modelS.addEventListener("click", function () {   
+        let idModelSId = document.getElementById("modelSSection");
+        idModelSId.scrollIntoView({behavior: 'smooth', block: "start"});
+    });
+
+    model3.addEventListener("click", function () {   
+        let idModel3Id = document.getElementById("model3Section"); 
+        idModel3Id.scrollIntoView({behavior: 'smooth', block: "start"});
+    });
+
+    modelX.addEventListener("click", function () {        
+        let idModelXId = document.getElementById("modelXSection");
+        idModelXId.scrollIntoView({behavior: 'smooth', block: "start"});
+    });
+
+    modelY.addEventListener("click", function () {       
+        let idModelYId = document.getElementById("modelYSection");
+        idModelYId.scrollIntoView({behavior: 'smooth', block: "start"});
+    });
+
+    solarRoof.addEventListener("click", function(){
+        let powerWallId = document.getElementById("solarRoof");
+        powerWallId.scrollIntoView({behavior: 'smooth', block: 'start'})
+    });
+
+    solarPanels.addEventListener("click", function(){
+        let solarPanelsId = document.getElementById("solarPanels");
+        solarPanelsId.scrollIntoView({behavior: 'smooth', block: 'start'})
+    });
+
+    powerWall.addEventListener("click", function(){
+        var idSolarPanels = document.getElementById("powerWall");
+        idSolarPanels.scrollIntoView({behavior: 'smooth', block: 'start'})
+    });
+
 </script>
 
 <script>
-    const header = document.querySelector('#landing-header') as HTMLElement;
+    const header = document.querySelector("#landing-header") as HTMLElement;
 
     const observerOptions = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.90,
-    }
+        rootMargin: "0px",
+        threshold: 0.9,
+    };
 
-    const observer = new IntersectionObserver(entries => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             const { isIntersecting } = entry;
-            if(isIntersecting){
-                const color = entry.target.getAttribute('data-header-color');      
+            if (isIntersecting) {
+                const color = entry.target.getAttribute("data-header-color");
                 header.style.color = color;
-                
             }
         });
     }, observerOptions);
 
-    const sectionElements = document.querySelectorAll('.landing-section');
+    const sectionElements = document.querySelectorAll(".landing-section");
     sectionElements.forEach((section) => observer.observe(section));
 </script>

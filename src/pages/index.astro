@@ -6,6 +6,10 @@ import Layout from "../layouts/Layout.astro";
 import ModelXSection from "../components/ModelXSection.astro";
 import ModelYSection from "../components/ModelYSection.astro";
 import ModelSSection from "../components/ModelSSection.astro";
+import SolarPanels from "../components/solarPanels.astro";
+import SolarRoof from "../components/solarRoof.astro";
+import Powerwall from "../components/Powerwall.astro";
+import Accesories from "../components/Accesories.astro";
 ---
 
 <Layout title="Tesla el coche de tus sueños">
@@ -13,20 +17,33 @@ import ModelSSection from "../components/ModelSSection.astro";
 	<main
 		class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
 	>
-		<div class="snap-center">
+		<div id="principalSection" class="snap-center">
 			<PrincipalSection />
 		</div>
-		<div class="snap-center">
+		<div id="modelSSection" class="snap-center">
 			<ModelSSection />
 		</div>
-		<div class="snap-center">
+		<div id="model3Section" class="snap-center">
 			<Model3Section />
 		</div>
-		<div class="snap-center">
+		<div id="modelXSection" class="snap-center">
 			<ModelXSection />
 		</div>	
-		<div class="snap-center">
+		<div id="modelYSection" class="snap-center">
 			<ModelYSection />
-		</div>					
+		</div>	
+		<div id="solarRoof" class="snap-center">
+			<SolarRoof />
+		</div>	
+		<div id="solarPanels" class="snap-center">
+			<SolarPanels />
+		</div>	
+		<div id="powerWall" class="snap-center">
+			<Powerwall />
+		</div>	
+		<div id="accesories" class="snap-center">
+			<Accesories />
+		</div>									
 	</main>
 </Layout>
+

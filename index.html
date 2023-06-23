@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<meta name="generator" content="Astro v2.6.3">
+		<title>Tesla el coche de tus sueños</title>
+	<link rel="stylesheet" href="/_astro/index.fbc8c44e.css" /><script type="module">const r=document.querySelector("#landing-header"),d={root:null,rootMargin:"0px",threshold:.9},i=new IntersectionObserver(e=>{e.forEach(o=>{const{isIntersecting:l}=o;if(l){const n=o.target.getAttribute("data-header-color");r.style.color=n}})},d),s=document.querySelectorAll(".landing-section");s.forEach(e=>i.observe(e));const a=document.querySelectorAll("#landing-header li"),t=document.querySelector("#menu-backdrop");a.forEach(e=>{e.addEventListener("mouseenter",()=>{const{left:o,top:l,width:n,height:c}=e.getBoundingClientRect();t.style.setProperty("--left",`${o}px`),t.style.setProperty("--top",`${l}px`),t.style.setProperty("--width",`${n}px`),t.style.setProperty("--height",`${c}px`),t.style.opacity="1",t.style.visibility="visible"}),e.addEventListener("mouseleave",()=>{t.style.opacity="0",t.style.visibility="hidden"})});const m=document.querySelector(".principalSection"),u=document.querySelector(".modelS"),y=document.querySelector(".model3"),I=document.querySelector(".modelX"),h=document.querySelector(".modelY"),p=document.querySelector(".solarRoof"),v=document.querySelector(".solarPanels"),S=document.querySelector(".powerwall");m.addEventListener("click",function(){document.getElementById("principalSection").scrollIntoView({behavior:"smooth",block:"start"})});u.addEventListener("click",function(){document.getElementById("modelSSection").scrollIntoView({behavior:"smooth",block:"start"})});y.addEventListener("click",function(){document.getElementById("model3Section").scrollIntoView({behavior:"smooth",block:"start"})});I.addEventListener("click",function(){document.getElementById("modelXSection").scrollIntoView({behavior:"smooth",block:"start"})});h.addEventListener("click",function(){document.getElementById("modelYSection").scrollIntoView({behavior:"smooth",block:"start"})});p.addEventListener("click",function(){document.getElementById("solarRoof").scrollIntoView({behavior:"smooth",block:"start"})});v.addEventListener("click",function(){document.getElementById("solarPanels").scrollIntoView({behavior:"smooth",block:"start"})});S.addEventListener("click",function(){var e=document.getElementById("powerWall");e.scrollIntoView({behavior:"smooth",block:"start"})});
+</script></head>
+	<body>
+		
+	<header id="landing-header" class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
+    <div class="flex flex-grow basis-0">
+        <svg class="principalSection h-6 w-28 transition-colors duration-500 cursor-pointer" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path></svg>
+    </div>
+
+    <nav>
+        <ul class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:text-current [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+            <li><a class="modelS cursor-pointer">Model S</a></li>
+            <li><a class="model3 cursor-pointer">Model 3</a></li>
+            <li><a class="modelX cursor-pointer">Model X</a></li>
+            <li><a class="modelY cursor-pointer">Model Y</a></li>
+            <li><a class="solarRoof cursor-pointer">Solar Roof</a></li>
+            <li><a class="solarPanels cursor-pointer">Solar Panels</a></li>
+            <li><a class="powerwall cursor-pointer">Powerwall</a></li>
+        </ul>
+    </nav>
+
+    <nav class="flex flex-grow justify-end basis-0">
+        <ul class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:text-current [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Menú</a></li>
+        </ul>
+    </nav>
+
+    <div id="menu-backdrop" class="
+        absolute bg-black/5 backdrop-blur-lg rounded
+        translate-x-[var(--left)] translate-y-[var(--top)]
+        left-0 top-0
+        w-[var(--width)] h-[var(--height)]
+        transition-all duration-500
+        ease-in-out opacity-0 -z-10
+    ">
+    </div>
+</header>
+	<main class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
+		<div id="principalSection" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="white">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-white pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Experience Tesla
+            </h2>
+            <p class="text-white undefined text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                Shedule a Demo Drive Today
+            </p>
+            <p class="text-white text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div>
+        <a class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm 
+            rounded font-medium text-white px-12 py-2 inline-block hover:bg-white
+            hover:text-black transition-colors animate-fade-up animate-once 
+            animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out" href="#">Demo Drive</a>
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <video class="object-center object-cover" autoplay muted loop src="/Video.webm">
+    </video>                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+                       
+    </div>
+</div>
+		</div>
+		<div id="modelSSection" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-black pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Model S
+            </h2>
+            <p class="text-black underline text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                Explore Inventory
+            </p>
+            <p class="text-black text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div class="flex gap-x-6 mx-auto">
+        <a class="opacity-2 text-sm rounded font-medium bg-gray-600 text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500" href="#">Custom Order</a>
+        <a class="opacity-2 text-sm rounded font-medium text-black bg-white px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center" href="#">Demo Drive</a>
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <img class="h-full w-full object-center object-cover" alt="Model S" src="/model-s.avif">                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+                       
+    </div>
+</div>
+		</div>
+		<div id="model3Section" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-black pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Model 3
+            </h2>
+            <p class="text-black undefined text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                Starting at $32,740
+            </p>
+            <p class="text-black text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                After Federal Tax Credit
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div class="flex gap-x-6 mx-auto">
+        <a class="opacity-2 text-sm rounded font-medium bg-gray-600 text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500" href="#">Custom Order</a>
+        <a class="opacity-2 text-sm rounded font-medium text-black bg-white px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center" href="#">Demo Drive</a>
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <img class="h-full w-full object-center object-cover" alt="Model 3" src="/model-3.avif">                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+                       
+    </div>
+</div>
+		</div>
+		<div id="modelXSection" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-black pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Model X
+            </h2>
+            <p class="text-black underline text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                Explore Inventory
+            </p>
+            <p class="text-black text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div class="flex gap-x-6 mx-auto">
+        <a class="opacity-2 text-sm rounded font-medium bg-gray-600 text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500" href="#">Custom Order</a>
+        <a class="opacity-2 text-sm rounded font-medium text-black bg-white px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center" href="#">Demo Drive</a>
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <img class="h-full w-full object-center object-cover" alt="Model X" src="/model-x.avif">                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+                       
+    </div>
+</div>
+		</div>	
+		<div id="modelYSection" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-black pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Model Y
+            </h2>
+            <p class="text-black undefined text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                Starting at $40,240
+            </p>
+            <p class="text-black text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                After Federal Tax Credit
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div class="flex gap-x-6 mx-auto">
+        <a class="opacity-2 text-sm rounded font-medium bg-gray-600 text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500" href="#">Custom Order</a>
+        <a class="opacity-2 text-sm rounded font-medium text-black bg-white px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center" href="#">Demo Drive</a>
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <img class="h-full w-full object-center object-cover" alt="Model Y" src="/model-y.avif">                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+                       
+    </div>
+</div>
+		</div>	
+		<div id="solarRoof" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-black pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Solar Roof
+            </h2>
+            <p class="text-black undefined text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                Produce Clean Energy From Your Roof
+            </p>
+            <p class="text-black text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div class="flex gap-x-6 mx-auto">
+        <a class="opacity-2 text-sm rounded font-medium bg-gray-600 text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500" href="#">Order Now</a>
+        <a class="opacity-2 text-sm rounded font-medium text-black bg-white px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center" href="#">Learn More</a>
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <img class="h-full w-full object-center object-cover" alt="Solar Roof" src="/solar-roof.avif">                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+                       
+    </div>
+</div>
+		</div>	
+		<div id="solarPanels" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-black pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Solar Panels
+            </h2>
+            <p class="text-black underline text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                Schedule a Virtual Consultation
+            </p>
+            <p class="text-black text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div class="flex gap-x-6 mx-auto">
+        <a class="opacity-2 text-sm rounded font-medium bg-gray-600 text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500" href="#">Order Now</a>
+        <a class="opacity-2 text-sm rounded font-medium text-black bg-white px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center" href="#">Learn More</a>
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <img class="h-full w-full object-center object-cover" alt="Solar Panels" src="/solar-panels.avif">                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+                       
+    </div>
+</div>
+		</div>	
+		<div id="powerWall" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-black pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Powerwall
+            </h2>
+            <p class="text-black undefined text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+            <p class="text-black text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div class="flex gap-x-6 mx-auto">
+        <a class="opacity-2 text-sm rounded font-medium bg-gray-600 text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500" href="#">Order Now</a>
+        <a class="opacity-2 text-sm rounded font-medium text-black bg-white px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center" href="#">Learn More</a>
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <img class="h-full w-full object-center object-cover" alt="Solar Panels" src="/powerwall.avif">                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+                       
+    </div>
+</div>
+		</div>	
+		<div id="accesories" class="snap-center">
+			<section class="landing-section flex justify-center items-center bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color="black">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-black pt-20 text-[40px] font-medium animate-fade-up animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+                Accesories
+            </h2>
+            <p class="text-black undefined text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+            <p class="text-black text-sm animate-fade-up animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-in-out">
+                
+            </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div>
+                <div class="flex justify-center mx-auto">
+        <a class="opacity-2 text-sm rounded font-medium bg-black text-white px-12 py-2 inline-block transition-colors hover:bg-gray-500 hover:border-gray-500" href="#">Shop Now</a>     
+        
+        
+    </div>               
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0 h-full z-10 w-full">
+        <img class="h-full w-full object-center object-cover" alt="Solar Panels" src="/accesories.avif">                   
+    </div>
+</section>
+
+<div class="relative bottom-8 z-30">
+    <div class="flex flex-row justify-stretch w-[100vw]">
+        <div class="flex justify-center mx-auto">
+        <div class="w-screen flex justify-center [&>p]:p-2 [&>p]:text-gray-500 [&>p]:text-xs [&>p]:cursor-pointer">
+            <p>Tesla © 2023</p>
+            <p>Privacy & legal</p>
+            <p>Vehicle Recalls</p>
+            <p>Contact</p>
+            <p>News</p>
+            <p>Get Updates</p>
+            <p>Locations</p>
+        </div>
+    </div>               
+    </div>
+</div>
+		</div>									
+	</main>
+
+	</body></html>
